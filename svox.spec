@@ -6,6 +6,7 @@ Version:	1.0
 Release:	0.%{subver}.1
 License:	Apache v2.0
 Group:		Libraries
+# originally http://android.git.kernel.org/?p=platform/external/svox.git;a=summary
 Source0:	http://ftp.de.debian.org/debian/pool/non-free/s/svox/%{name}_%{version}+%{subver}.orig.tar.gz
 # Source0-md5:	e9dd590721705c50ee5d7f262bd3c697
 Patch0:		0001-autoconf-building-of-library-using-libtool.patch
