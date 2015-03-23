@@ -1,13 +1,14 @@
+%define	subver	git20110131
+%define	rel		2
 Summary:	SVOX Pico software speech synthesizer engine
 Summary(pl.UTF-8):	Silnik programowego syntezatora mowy SVOX Pico
 Name:		svox
-%define	subver	git20110131
 Version:	1.0
-Release:	0.%{subver}.1
+Release:	0.%{subver}.%{rel}
 License:	Apache v2.0
 Group:		Libraries
 # originally http://android.git.kernel.org/?p=platform/external/svox.git;a=summary
-Source0:	http://ftp.de.debian.org/debian/pool/non-free/s/svox/%{name}_%{version}+%{subver}.orig.tar.gz
+Source0:	ftp://ftp.debian.org/debian/pool/non-free/s/svox/%{name}_%{version}+%{subver}.orig.tar.gz
 # Source0-md5:	e9dd590721705c50ee5d7f262bd3c697
 Patch0:		0001-autoconf-building-of-library-using-libtool.patch
 Patch1:		0002-gitignore-for-autotools-files.patch
@@ -21,6 +22,7 @@ URL:		http://www.android.com/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	libtool >= 2:2
+BuildRequires:	popt-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -155,8 +157,7 @@ BuildArch:	noarch
 SVOX Pico TTS language files (lingware) for Italian.
 
 %description lang-it -l pl.UTF-8
-Pliki językowe (lingware) syntezatora SVOX Pico dla języka
-włoskiego.
+Pliki językowe (lingware) syntezatora SVOX Pico dla języka włoskiego.
 
 %package docs
 Summary:	SVOX Pico TTS engine documentation
