@@ -1,5 +1,5 @@
-%define	subver	git20110131
-%define	rel		2
+%define	subver	git20130326
+%define	rel	1
 Summary:	SVOX Pico software speech synthesizer engine
 Summary(pl.UTF-8):	Silnik programowego syntezatora mowy SVOX Pico
 Name:		svox
@@ -9,7 +9,7 @@ License:	Apache v2.0
 Group:		Libraries
 # originally http://android.git.kernel.org/?p=platform/external/svox.git;a=summary
 Source0:	ftp://ftp.debian.org/debian/pool/non-free/s/svox/%{name}_%{version}+%{subver}.orig.tar.gz
-# Source0-md5:	e9dd590721705c50ee5d7f262bd3c697
+# Source0-md5:	df4bf610ff4273b420e80ff64af93130
 Patch0:		0001-autoconf-building-of-library-using-libtool.patch
 Patch1:		0002-gitignore-for-autotools-files.patch
 Patch2:		0003-pico2wave-Convert-text-to-.wav-using-svox-text-to-sp.patch
@@ -17,7 +17,8 @@ Patch3:		0004-add-header-files.patch
 Patch4:		0005-Install-lang-files.patch
 Patch5:		0006-Set-picolangdir.patch
 Patch6:		0008-64bits.patch
-Patch7:		%{name}-link.patch
+Patch7:		0009-Fix-link-order.patch
+Patch8:		0010-platform.patch
 URL:		http://www.android.com/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
@@ -183,6 +184,7 @@ Dokumentacja silnika syntezy mowy SVOX Pico.
 %patch5 -p1
 %patch6 -p1
 %patch7 -p1
+%patch8 -p1
 
 %build
 cd pico
