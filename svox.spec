@@ -8,7 +8,7 @@ Release:	0.%{subver}.%{rel}
 License:	Apache v2.0
 Group:		Libraries
 # originally http://android.git.kernel.org/?p=platform/external/svox.git;a=summary
-Source0:	ftp://ftp.debian.org/debian/pool/non-free/s/svox/%{name}_%{version}+%{subver}.orig.tar.gz
+Source0:	http://ftp.debian.org/debian/pool/non-free/s/svox/%{name}_%{version}+%{subver}.orig.tar.gz
 # Source0-md5:	df4bf610ff4273b420e80ff64af93130
 Patch0:		0001-autoconf-building-of-library-using-libtool.patch
 Patch1:		0002-gitignore-for-autotools-files.patch
