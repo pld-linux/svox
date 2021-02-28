@@ -70,9 +70,7 @@ Summary:	SVOX Pico TTS language files (lingware) for German
 Summary(pl.UTF-8):	Pliki językowe (lingware) syntezatora SVOX Pico dla języka niemieckiego
 Group:		Applications/Text
 Requires:	%{name} = %{version}-%{release}
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description lang-de
 SVOX Pico TTS language files (lingware) for German.
@@ -86,9 +84,7 @@ Summary:	SVOX Pico TTS language files (lingware) for UK English
 Summary(pl.UTF-8):	Pliki językowe (lingware) syntezatora SVOX Pico dla angielskiego brytyjskiego
 Group:		Applications/Text
 Requires:	%{name} = %{version}-%{release}
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description lang-en_GB
 SVOX Pico TTS language files (lingware) for UK English.
@@ -102,9 +98,7 @@ Summary:	SVOX Pico TTS language files (lingware) for US English
 Summary(pl.UTF-8):	Pliki językowe (lingware) syntezatora SVOX Pico dla angielskiego amerykańskiego
 Group:		Applications/Text
 Requires:	%{name} = %{version}-%{release}
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description lang-en_US
 SVOX Pico TTS language files (lingware) for US English.
@@ -118,9 +112,7 @@ Summary:	SVOX Pico TTS language files (lingware) for Spanish
 Summary(pl.UTF-8):	Pliki językowe (lingware) syntezatora SVOX Pico dla języka hiszpańskiego
 Group:		Applications/Text
 Requires:	%{name} = %{version}-%{release}
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description lang-es
 SVOX Pico TTS language files (lingware) for Spanish
@@ -134,9 +126,7 @@ Summary:	SVOX Pico TTS language files (lingware) for French
 Summary(pl.UTF-8):	Pliki językowe (lingware) syntezatora SVOX Pico dla języka francuskiego
 Group:		Applications/Text
 Requires:	%{name} = %{version}-%{release}
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description lang-fr
 SVOX Pico TTS language files (lingware) for French.
@@ -150,9 +140,7 @@ Summary:	SVOX Pico TTS language files (lingware) for Italian
 Summary(pl.UTF-8):	Pliki językowe (lingware) syntezatora SVOX Pico dla języka włoskiego
 Group:		Applications/Text
 Requires:	%{name} = %{version}-%{release}
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description lang-it
 SVOX Pico TTS language files (lingware) for Italian.
@@ -164,9 +152,7 @@ Pliki językowe (lingware) syntezatora SVOX Pico dla języka włoskiego.
 Summary:	SVOX Pico TTS engine documentation
 Summary(pl.UTF-8):	Dokumentacja silnika syntezy mowy SVOX Pico
 Group:		Documentation
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description docs
 SVOX Pico TTS engine documentation.
